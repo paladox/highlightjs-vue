@@ -6,7 +6,7 @@ Description: Single-File Components of Vue.js Framework
 */
 var module = module ? module : {};
 
-export default function hljsDefineVue(hljs) {
+export default function(hljs) {
   return {
     subLanguage: "xml",
     contains: [
