@@ -6,7 +6,7 @@ Description: Single-File Components of Vue.js Framework
 */
 var module = module ? module : {};
 
-function hljsDefineVue(hljs) {
+export default function(hljs) {
   return {
     subLanguage: "xml",
     contains: [
@@ -51,9 +51,3 @@ function hljsDefineVue(hljs) {
     ],
   };
 }
-
-module.exports = function(hljs) {
-  hljs.registerLanguage("vue", hljsDefineVue);
-};
-
-module.exports.definer = hljsDefineVue;
